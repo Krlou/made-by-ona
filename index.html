@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- links to extern css styles -->
+    <link rel="stylesheet" href="./index.css" />
+    <title>Made By Ona</title>
+  </head>
+  <body>
+    <div class="backdrop" onclick="closeBackdrop()"></div>
+    <header id="pageHeader" class="page-header">
+      <button class="toggle-button" onclick="openMobileNav()">
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+      </button>
+      <div class="page-header__logo">
+        <p>MADE BY</p>
+        <div></div>
+        <p style="font-weight: bold;">ONA</p>
+      </div>
+      <nav class="nav-bar">
+        <ul class="nav-bar__items">
+          <li class="nav-bar__item">
+            <a href="#aboutSection">O NAMA</a>
+          </li>
+          <li class="nav-bar__item">
+            <a href="#productsSection">PROIZVODI</a>
+          </li>
+          <li class="nav-bar__item">
+            <a href="#contactSection">KONTAKT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__items">
+        <li class="mobile-nav__item">
+          <a href="#aboutSection" onclick="closeBackdrop()">O NAMA</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#productsSection" onclick="closeBackdrop()">PROIZVODI</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#contactSection" onclick="closeBackdrop()">KONTAKT</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <!-- app overview -->
+      <div class="app-overview"></div>
+      <!--  about section -->
+      <div id="aboutSection" class="about">
+        <p class="about-title">
+          RUČNO PRAVLJENI PREDMETI OD BETONA
+        </p>
+        <p>
+          Made by Ona je društvo entuzijazista koje se bavi dizajniranjem i
+          kreiranjem saksija i lampi koristeći beton i drvo.
+        </p>
+      </div>
+      <!--  products gallery section -->
+      <div id="productsSection" class="products">
+        <div class="products-slideshow">
+          <div class="products-slideshow__slide fade">
+            <div class="slide-pagination">1 / 3</div>
+            <img src="./images/bg-image-alt.jpg" />
+            <div class="slide-caption"><strong>SLIKA 1</strong></div>
+            <a class="slide-controls-prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="slide-controls-next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <div class="products-slideshow__slide fade">
+            <div class="slide-pagination">2 / 3</div>
+            <img src="./images/bg-image-fav.jpg" />
+            <div class="slide-caption"><strong>SLIKA 2</strong></div>
+            <a class="slide-controls-prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="slide-controls-next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <div class="products-slideshow__slide fade">
+            <div class="slide-pagination">3 / 3</div>
+            <img src="./images/bg-image-vertical.jpg" />
+            <div class="slide-caption"><strong>SLIKA 3</strong></div>
+            <a class="slide-controls-prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="slide-controls-next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </div>
+
+        <div class="dot-controls">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </main>
+    <!-- contact section -->
+    <footer id="contactSection" class="contact">
+      <div class="contact-email">
+        <p>KONTAKT</p>
+        <p><strong>madebyona@gmail.com</strong></p>
+      </div>
+      <div class="contact-social__media">
+        <p>ZAPRATITE NAS</p>
+        <ul class="icons-list">
+          <li class="icon">
+            <a href="http://www.facebook.com" target="_blank">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fab"
+                data-icon="facebook-square"
+                class="svg-inline--fa fa-facebook-square fa-w-14"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  id="facebook-icon"
+                  fill="currentColor"
+                  d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="icon">
+            <a href="http://www.instagram.com" target="_blank">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fab"
+                data-icon="instagram"
+                class="svg-inline--fa fa-instagram fa-w-14"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  id="instagram-icon"
+                  fill="currentColor"
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- js code for image slider -->
+    <script src="slider.js"></script>
+    <!-- js code to paint page-header -->
+    <script src="navbarPainter.js"></script>
+    <!-- js code for handling mobile nav -->
+    <script src="mobileNav.js"></script>
+  </body>
+</html>
