@@ -24,6 +24,7 @@ body {
 }
 
 .page-header {
+  z-index: 500;
   position: fixed;
   top: 0;
   left: 0;
@@ -133,7 +134,7 @@ body {
 .mobile-nav {
   display: none;
   position: fixed;
-  z-index: 101;
+  z-index: 1001;
   top: 0;
   left: 0;
   background: #fff;
@@ -213,7 +214,7 @@ body {
 
 .products-slideshow {
   width: 100vw;
-  height: 60vw;
+  height: 60vh;
   /* added to suspense horizontal scrolling */
   max-width: 100%;
   max-height: 600px;
@@ -248,7 +249,7 @@ body {
 }
 
 .slide-pagination {
-  visibility: hidden; /* because of navbar */
+  visibility: visible;
   position: relative;
   top: 40px;
   padding: 0 12px;
@@ -448,10 +449,6 @@ body {
 
   .contact {
     flex-direction: column;
-  }
-
-  .slide-pagination {
-    visibility: visible;
   }
 
   .page-header__logo {

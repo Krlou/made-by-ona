@@ -4,17 +4,11 @@ window.onscroll = () => {
 
 const scrollFunction = () => {
   let pageHeader = null;
-  let pageHeaderLogo = null;
+  const height = window.innerHeight;
   if (
-    document.body.scrollTop > 650 ||
-    document.documentElement.scrollTop > 650
-  ) {
-    pageHeader = document.getElementById("pageHeader");
-    pageHeader.style.backgroundImage = "";
-  } else if (
     //0-200px
-    document.body.scrollTop > 200 ||
-    document.documentElement.scrollTop > 200
+    document.body.scrollTop > height * 0.1 ||
+    document.documentElement.scrollTop > height * 0.1
   ) {
     pageHeader = document.getElementById("pageHeader");
     pageHeader.style.backgroundImage =
