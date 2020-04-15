@@ -266,6 +266,7 @@ body {
 }
 
 .dot {
+  outline: none;
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -279,6 +280,19 @@ body {
 .active,
 .dot:hover {
   background-color: #717171;
+  outline: 0;
+  border: none;
+  /**/
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dot:active,
+.dot:focus {
+  background-color: #717171;
+  outline: 0;
+  border: none;
+  /**/
+  -webkit-tap-highlight-color: transparent;
 }
 
 .slide-controls-prev,
