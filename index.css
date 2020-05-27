@@ -70,6 +70,7 @@ body {
   padding: 16px;
   border: 3px solid #282828;
   /*flex item element for page-header container*/
+  user-select: none;
 }
 
 /* 360 degrees rotate animation */
@@ -248,6 +249,7 @@ body {
   margin: 0;
   width: 100%;
   text-align: center;
+  user-select: none;
 }
 
 .slide-pagination {
@@ -259,6 +261,7 @@ body {
   color: #fff;
   font-size: 16px;
   font-weight: bold;
+  user-select: none;
 }
 
 .slide-controls-prev,
@@ -311,11 +314,19 @@ body {
   /*flex item element*/
 }
 
+#contactHeading {
+  user-select: none;
+}
+
 .contact-social__media {
   margin: 0 16px;
   padding: 0 16px;
   text-align: center;
   /*flex item element*/
+}
+
+#followUsHeading {
+  user-select: none;
 }
 
 .contact p {
@@ -338,6 +349,8 @@ body {
 .icon a {
   text-decoration: none;
   cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #facebook-icon,
@@ -345,6 +358,8 @@ body {
 #facebook-icon:hover,
 #facebook-icon:focus {
   fill: #282828;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 #instagram-icon,
@@ -352,6 +367,8 @@ body {
 #instagram-icon:hover,
 #instagram-icon:focus {
   fill: #282828;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 /* Fading animation */
